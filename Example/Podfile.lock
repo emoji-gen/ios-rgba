@@ -1,0 +1,19 @@
+PODS:
+  - Kiwi (2.4.0)
+  - RGBA (0.1.0)
+
+DEPENDENCIES:
+  - Kiwi
+  - RGBA (from `../`)
+
+EXTERNAL SOURCES:
+  RGBA:
+    :path: ../
+
+SPEC CHECKSUMS:
+  Kiwi: f49c9d54b28917df5928fe44968a39ed198cb8a8
+  RGBA: 15b723adef9781de630dd325bdf32b55af9ae523
+
+PODFILE CHECKSUM: 2b6fe0b40b10e8fb4f94d241ff8d7291de9fc4f0
+
+COCOAPODS: 1.3.1
