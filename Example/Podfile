@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'RGBA_Example' do
+  pod 'RGBA', :path => '../'
+
+  target 'RGBA_Tests' do
+    inherit! :search_paths
+
+    pod 'Kiwi'
+  end
+end
