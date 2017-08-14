@@ -337,11 +337,11 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-RGBA_Example/Pods-RGBA_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/RGBA/RGBA.framework",
+				"${BUILT_PRODUCTS_DIR}/EGRGBA/EGRGBA.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RGBA.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EGRGBA.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

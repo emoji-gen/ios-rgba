@@ -1,19 +1,19 @@
 PODS:
+  - EGRGBA (0.1.0)
   - Kiwi (2.4.0)
-  - RGBA (0.1.0)
 
 DEPENDENCIES:
+  - EGRGBA (from `../`)
   - Kiwi
-  - RGBA (from `../`)
 
 EXTERNAL SOURCES:
-  RGBA:
+  EGRGBA:
     :path: ../
 
 SPEC CHECKSUMS:
+  EGRGBA: 38ee570712532b9f7ee75958cb2a2f09f4b7bd2a
   Kiwi: f49c9d54b28917df5928fe44968a39ed198cb8a8
-  RGBA: 15b723adef9781de630dd325bdf32b55af9ae523
 
-PODFILE CHECKSUM: 2b6fe0b40b10e8fb4f94d241ff8d7291de9fc4f0
+PODFILE CHECKSUM: f4d8f42d597297c8f656cbd3dc07fc0a59b46bc2
 
 COCOAPODS: 1.3.1

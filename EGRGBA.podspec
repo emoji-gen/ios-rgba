@@ -7,7 +7,7 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'RGBA'
+  s.name             = 'EGRGBA'
   s.version          = '0.1.0'
   s.summary          = 'A short description of RGBA.'
 
@@ -30,7 +30,7 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'RGBA/Classes/**/*'
+  s.source_files = 'EGRGBA/Classes/**/*'
 
   # s.resource_bundles = {
   #   'RGBA' => ['RGBA/Assets/*.png']
