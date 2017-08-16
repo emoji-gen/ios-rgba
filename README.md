@@ -5,6 +5,10 @@
 [![License](https://img.shields.io/cocoapods/l/RGBA.svg?style=flat)](http://cocoapods.org/pods/RGBA)
 [![Platform](https://img.shields.io/cocoapods/p/RGBA.svg?style=flat)](http://cocoapods.org/pods/RGBA)
 
+:art: RGBA color string utilities for iOS
+
+![](palette.jpg)
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
