@@ -1,4 +1,4 @@
-# RGBA
+# iOS-RGBA
 
 [![CI Status](http://img.shields.io/travis/pine/RGBA.svg?style=flat)](https://travis-ci.org/pine/RGBA)
 [![Version](https://img.shields.io/cocoapods/v/RGBA.svg?style=flat)](http://cocoapods.org/pods/RGBA)
@@ -17,13 +17,9 @@ RGBA is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod "RGBA"
+pod 'RGBA'
 ```
-
-## Author
-
-Pine Mizune, pinemz@gmail.com
 
 ## License
 
-RGBA is available under the MIT license. See the LICENSE file for more info.
+MIT &copy; Emoji Generator
