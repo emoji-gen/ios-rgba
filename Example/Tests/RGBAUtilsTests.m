@@ -61,12 +61,12 @@ describe(@"RGBAUtils", ^{
     
     context(@"fromUIColor", ^{
         it(@"can convert to RGBA", ^{
-            UIColor *color = [UIColor colorWithRed:(CGFloat)(0x12/255.0)
-                                             green:(CGFloat)(0x34/255.0)
-                                              blue:(CGFloat)(0x56/255.0)
-                                             alpha:(CGFloat)(0x78/255.0)];
+            UIColor *color = [UIColor colorWithRed:(CGFloat)(0x01/255.0)
+                                             green:(CGFloat)(0x56/255.0)
+                                              blue:(CGFloat)(0x9a/255.0)
+                                             alpha:(CGFloat)(0xff/255.0)];
             NSString *string = [RGBAUtils fromUIColor:color];
-            [[string should] equal:@"12345678"];
+            [[string should] equal:@"01569AFF"];
         });
     });
 });
