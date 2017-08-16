@@ -57,6 +57,46 @@ describe(@"RGBAUtils", ^{
             [[theValue(blue) should] equal:theValue(0x33/255.0)];
             [[theValue(alpha) should] equal:theValue(0x44/255.0)];
         });
+        
+        it(@"can't parse empty string", ^{
+            [[theBlock(^{
+                [RGBAUtils toUIColor:@""];
+            }) should]
+                raiseWithName:@"EGRGBUtilsException"
+                       reason:@"empty string not allowed"];
+        });
+        
+        it(@"can't parse 3 length string", ^{
+           [[theBlock(^{
+               [RGBAUtils toUIColor:@"123"];
+           }) should]
+                raiseWithName:@"EGRGBUtilsException"
+                       reason:@"string length should be 4, 5, 8 or 9"];
+        });
+        
+        it(@"can't parse 6 length string", ^{
+            [[theBlock(^{
+                [RGBAUtils toUIColor:@"123456"];
+            }) should]
+                raiseWithName:@"EGRGBUtilsException"
+                       reason:@"string length should be 4, 5, 8 or 9"];
+        });
+        
+        it(@"can't parse 7 length string", ^{
+            [[theBlock(^{
+                [RGBAUtils toUIColor:@"1234567"];
+            }) should]
+                raiseWithName:@"EGRGBUtilsException"
+                       reason:@"string length should be 4, 5, 8 or 9"];
+        });
+        
+        it(@"can't parse 10 length string", ^{
+            [[theBlock(^{
+                [RGBAUtils toUIColor:@"1234567890"];
+            }) should]
+                raiseWithName:@"EGRGBUtilsException"
+                       reason:@"string length should be 4, 5, 8 or 9"];
+        });
     });
     
     context(@"fromUIColor", ^{
