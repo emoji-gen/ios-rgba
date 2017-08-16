@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'RGBA'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of RGBA.'
+  s.summary          = 'RGBA color string utilities for Android'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,25 +18,16 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+RGBA color string utilities for Android
                        DESC
 
-  s.homepage         = 'https://github.com/Pine Mizune/RGBA'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Pine Mizune' => 'pinemz@gmail.com' }
-  s.source           = { :git => 'https://github.com/Pine Mizune/RGBA.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
+  s.homepage              = 'https://github.com/Pine Mizune/RGBA'
+  s.license               = { :type => 'MIT', :file => 'LICENSE' }
+  s.author                = { 'Pine Mizune' => 'pinemz@gmail.com' }
+  s.source                = { :git => 'https://github.com/pine/RGBA.git', :tag => s.version.to_s }
+  s.social_media_url      = 'https://twitter.com/pine'
   s.ios.deployment_target = '8.0'
-
-  s.source_files = 'RGBA/Classes/**/*'
-
-  # s.resource_bundles = {
-  #   'RGBA' => ['RGBA/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.source_files          = 'RGBA/Classes/**/*'
+  s.public_header_files   = 'RGBA/Classes/**/*.h'
+  s.frameworks            = 'UIKit'
 end
