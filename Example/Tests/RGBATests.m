@@ -8,15 +8,15 @@
 
 // https://github.com/kiwi-bdd/Kiwi
 
-@import EGRGBA;
+@import RGBA;
 
 SPEC_BEGIN(InitialTests)
 
-describe(@"EGRGBAUtils", ^{
+describe(@"RGBAUtils", ^{
     context(@"toUIColor", ^{
         it(@"can parse 9 length string", ^{
             CGFloat red, green, blue, alpha;
-            UIColor *colorRed = [EGRGBAUtils toUIColor:@"#12345678"];
+            UIColor *colorRed = [RGBAUtils toUIColor:@"#12345678"];
             [colorRed getRed:&red green:&green blue:&blue alpha:&alpha];
             
             [[theValue(red) should] equal:theValue(0x12/255.0)];
@@ -27,7 +27,7 @@ describe(@"EGRGBAUtils", ^{
         
         it(@"can parse 8 length string", ^{
             CGFloat red, green, blue, alpha;
-            UIColor *colorRed = [EGRGBAUtils toUIColor:@"12345678"];
+            UIColor *colorRed = [RGBAUtils toUIColor:@"12345678"];
             [colorRed getRed:&red green:&green blue:&blue alpha:&alpha];
             
             [[theValue(red) should] equal:theValue(0x12/255.0)];
@@ -38,7 +38,7 @@ describe(@"EGRGBAUtils", ^{
         
         it(@"can parse 5 length string", ^{
             CGFloat red, green, blue, alpha;
-            UIColor *colorRed = [EGRGBAUtils toUIColor:@"#1234"];
+            UIColor *colorRed = [RGBAUtils toUIColor:@"#1234"];
             [colorRed getRed:&red green:&green blue:&blue alpha:&alpha];
             
             [[theValue(red) should] equal:theValue(0x11/255.0)];
@@ -49,7 +49,7 @@ describe(@"EGRGBAUtils", ^{
         
         it(@"can parse 4 length string", ^{
             CGFloat red, green, blue, alpha;
-            UIColor *colorRed = [EGRGBAUtils toUIColor:@"1234"];
+            UIColor *colorRed = [RGBAUtils toUIColor:@"1234"];
             [colorRed getRed:&red green:&green blue:&blue alpha:&alpha];
             
             [[theValue(red) should] equal:theValue(0x11/255.0)];

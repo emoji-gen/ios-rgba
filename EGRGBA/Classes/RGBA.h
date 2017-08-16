@@ -6,4 +6,4 @@
 //
 //
 
-#import "EGRGBAUtils.h"
+#import "RGBAUtils.h"

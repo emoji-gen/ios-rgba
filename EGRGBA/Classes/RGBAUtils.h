@@ -8,7 +8,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface EGRGBAUtils : NSObject
+@interface RGBAUtils : NSObject
 
 + (UIColor*)toUIColor:(NSString*)string;
 + (NSString*)toRGBA:(UIColor*)color;

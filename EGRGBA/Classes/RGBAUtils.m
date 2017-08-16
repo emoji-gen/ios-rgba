@@ -6,13 +6,13 @@
 //
 //
 
-#import "EGRGBAUtils.h"
+#import "RGBAUtils.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 static NSString *const EGRGBUtilsException = @"EGRGBUtilsException";
 
-@implementation EGRGBAUtils
+@implementation RGBAUtils
 
 + (UIColor*)toUIColor:(NSString*)string {
     if (![string length]) {
