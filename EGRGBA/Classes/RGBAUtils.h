@@ -11,7 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface RGBAUtils : NSObject
 
 + (UIColor*)toUIColor:(NSString*)string;
-+ (NSString*)toRGBA:(UIColor*)color;
++ (NSString*)fromUIColor:(UIColor*)color;
 
 @end
 

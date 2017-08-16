@@ -53,8 +53,15 @@ static NSString *const EGRGBUtilsException = @"EGRGBUtilsException";
                                  userInfo:nil];
 }
 
-+ (NSString*)toRGBA :(UIColor*)color {
-    return nil;
++ (NSString*)fromUIColor:(UIColor*)color {
+    CGFloat red, green, blue, alpha;
+    [color getRed:&red green:&green blue:&blue alpha:&alpha];
+    return [NSString
+            stringWithFormat:@"%02X%02X%02X%02X",
+            (int)(red * 0xff),
+            (int)(green * 0xff),
+            (int)(blue * 0xff),
+            (int)(alpha * 0xff)];
 }
 
 @end
