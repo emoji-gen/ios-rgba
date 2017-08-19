@@ -41,4 +41,4 @@ let color = RGBAUtils.toUIColor("#FF0000FF")
 
 ## License
 
-MIT &copy; Emoji Generator
+MIT &copy; [Emoji Generator](https://emoji.pine.moe)
