@@ -4,13 +4,7 @@
 
 ![](palette.jpg)
 
-## Example
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
-
-## Installation
+## Getting Started
 
 RGBA is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
@@ -18,6 +12,20 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod 'RGBA'
 ```
+
+### Objective-C
+
+```obj-c
+@import RGBA;
+
+// UIColor to RGBA
+UIColor *color = [UIColor colorWithRed:1 green:0 blue:0 alpha:1];
+NSString *string = [RGBAUtils fromUIColor:color];
+
+// RGBA to UIColor
+UIColor *color = [RGBAUtils toUIColor:@"#FF0000FF"];
+```
+
 
 ## License
 
