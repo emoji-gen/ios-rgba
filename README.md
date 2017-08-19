@@ -20,7 +20,7 @@ pod 'RGBA'
 
 // UIColor to RGBA
 UIColor *color = [UIColor colorWithRed:1 green:0 blue:0 alpha:1];
-NSString *string = [RGBAUtils fromUIColor:color];
+NSString *string = [RGBAUtils fromUIColor:color]; // or [color toRGBA]
 
 // RGBA to UIColor
 UIColor *color = [RGBAUtils toUIColor:@"#FF0000FF"];
@@ -33,7 +33,7 @@ import RGBA
 
 // UIColor to RGBA
 let color = UIColor(red: 1.0, green: 0.0, blue: 0.0, alpha: 1.0)
-let string = RGBAUtils.fromUIColor(color)
+let string = RGBAUtils.fromUIColor(color) // or color.toRGBA()
 
 // RGBA to UIColor
 let color = RGBAUtils.toUIColor("#FF0000FF")
