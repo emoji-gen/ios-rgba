@@ -111,4 +111,17 @@ describe(@"RGBAUtils", ^{
     });
 });
 
+describe(@"UIColor+RGBA", ^{
+    context(@"toRGBA", ^{
+        it(@"can convert RGBA string", ^{
+            UIColor *color = [UIColor colorWithRed:(CGFloat)(0x01/255.0)
+                                             green:(CGFloat)(0x56/255.0)
+                                              blue:(CGFloat)(0x9a/255.0)
+                                             alpha:(CGFloat)(0xff/255.0)];
+            NSString *string = [color toRGBA];
+            [[string should] equal:@"01569AFF"];
+        });
+    });
+});
+
 SPEC_END

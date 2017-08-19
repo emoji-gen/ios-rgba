@@ -7,3 +7,4 @@
 //
 
 #import "RGBAUtils.h"
+#import "UIColor+RGBA.h"
