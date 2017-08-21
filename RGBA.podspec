@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'RGBA'
   s.version          = '0.1.0'
-  s.summary          = 'RGBA color string utilities for Android'
+  s.summary          = 'RGBA color string utilities for iOS'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,9 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-RGBA color string utilities for Android
+RGBA color string utilities for iOS
+
+By using this library, mutual conversion between RGBA color string and UIColor is possible.
                        DESC
 
   s.homepage              = 'https://github.com/emoji-gen/ios-rgba'
