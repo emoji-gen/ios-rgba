@@ -19,11 +19,12 @@ pod 'RGBA'
 @import RGBA;
 
 // UIColor to RGBA
-UIColor *color = [UIColor colorWithRed:1 green:0 blue:0 alpha:1];
-NSString *string = [RGBAUtils fromUIColor:color]; // or [color toRGBA]
+UIColor *color1 = [UIColor colorWithRed:1 green:0 blue:0 alpha:1];
+NSString *string1 = [RGBAUtils fromUIColor:color1];
+NSString *string2 = [color1 toRGBA]; // Use category
 
 // RGBA to UIColor
-UIColor *color = [RGBAUtils toUIColor:@"#FF0000FF"];
+UIColor *color2 = [RGBAUtils toUIColor:@"#FF0000FF"];
 ```
 
 ### Swift
@@ -32,11 +33,12 @@ UIColor *color = [RGBAUtils toUIColor:@"#FF0000FF"];
 import RGBA
 
 // UIColor to RGBA
-let color = UIColor(red: 1.0, green: 0.0, blue: 0.0, alpha: 1.0)
-let string = RGBAUtils.fromUIColor(color) // or color.toRGBA()
+let color1 = UIColor(red: 1.0, green: 0.0, blue: 0.0, alpha: 1.0)
+let string1 = RGBAUtils.fromUIColor(color1)
+let string2 = color1.toRGBA() // Use Extension
 
 // RGBA to UIColor
-let color = RGBAUtils.toUIColor("#FF0000FF")
+let color2 = RGBAUtils.toUIColor("#FF0000FF")
 ```
 
 ## License
