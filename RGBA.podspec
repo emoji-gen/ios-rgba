@@ -21,10 +21,10 @@ Pod::Spec.new do |s|
 RGBA color string utilities for Android
                        DESC
 
-  s.homepage              = 'https://github.com/Pine Mizune/RGBA'
+  s.homepage              = 'https://github.com/emoji-gen/ios-rgba'
   s.license               = { :type => 'MIT', :file => 'LICENSE' }
   s.author                = { 'Pine Mizune' => 'pinemz@gmail.com' }
-  s.source                = { :git => 'https://github.com/pine/RGBA.git', :tag => s.version.to_s }
+  s.source                = { :git => 'https://github.com/emoji-gen/ios-rgba.git', :tag => s.version.to_s }
   s.social_media_url      = 'https://twitter.com/pine'
   s.ios.deployment_target = '8.0'
   s.source_files          = 'RGBA/Classes/**/*'
