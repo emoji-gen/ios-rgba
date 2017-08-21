@@ -25,6 +25,7 @@ NSString *string2 = [color1 toRGBA]; // Use category
 
 // RGBA to UIColor
 UIColor *color2 = [RGBAUtils toUIColor:@"#FF0000FF"];
+UIColor *color3 = [@"#FF0000FF" RGBAtoUIColor]; // Use category
 ```
 
 ### Swift
@@ -39,6 +40,7 @@ let string2 = color1.toRGBA() // Use Extension
 
 // RGBA to UIColor
 let color2 = RGBAUtils.toUIColor("#FF0000FF")
+let color3 = "#FF0000FF".RGBAToUIColor() // Use Extension
 ```
 
 ## License
