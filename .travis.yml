@@ -1,6 +1,7 @@
 osx_image: xcode8.3
 language: objective-c
 podfile: Example/Podfile
+xcode_sdk: iphonesimulator10.0
 script:
-  - set -o pipefail && xcodebuild test -workspace Example/RGBA.xcworkspace -scheme RGBA-Example -sdk iphonesimulator -configuration Debug | xcpretty
-  - pod lib lint
+  - set -o pipefail
+  - travis_retry xcodebuild -workspace Example/RGBA.xcworkspace -scheme RGBA-Example -destination "platform=iOS Simulator,name=iPhone 6" Debug test | xcpretty
