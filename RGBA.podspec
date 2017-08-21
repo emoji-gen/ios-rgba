@@ -25,7 +25,7 @@ RGBA color string utilities for Android
   s.license               = { :type => 'MIT', :file => 'LICENSE' }
   s.author                = { 'Pine Mizune' => 'pinemz@gmail.com' }
   s.source                = { :git => 'https://github.com/emoji-gen/ios-rgba.git', :tag => s.version.to_s }
-  s.social_media_url      = 'https://twitter.com/pine'
+  s.social_media_url      = 'https://twitter.com/pine613'
   s.ios.deployment_target = '8.0'
   s.source_files          = 'RGBA/Classes/**/*'
   s.public_header_files   = 'RGBA/Classes/**/*.h'
