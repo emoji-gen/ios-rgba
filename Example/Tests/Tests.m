@@ -124,4 +124,19 @@ describe(@"UIColor+RGBA", ^{
     });
 });
 
+describe(@"NSString+RGBA", ^{
+    context(@"RGBAtoUIColor", ^{
+        it(@"can convert to UIColor", ^{
+            CGFloat red, green, blue, alpha;
+            UIColor *color = [@"#01569AFF" RGBAtoUIColor];
+            
+            [color getRed:&red green:&green blue:&blue alpha:&alpha];
+            [[theValue(red) should] equal:theValue(0x01/255.0)];
+            [[theValue(green) should] equal:theValue(0x56/255.0)];
+            [[theValue(blue) should] equal:theValue(0x9A/255.0)];
+            [[theValue(alpha) should] equal:theValue(0xFF/255.0)];
+        });
+    });
+});
+
 SPEC_END
