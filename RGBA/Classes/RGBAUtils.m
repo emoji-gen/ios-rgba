@@ -10,13 +10,13 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-static NSString *const EGRGBUtilsException = @"EGRGBUtilsException";
+static NSString *const RGBUtilsException = @"RGBUtilsException";
 
 @implementation RGBAUtils
 
 + (UIColor*)toUIColor:(NSString*)string {
     if (![string length]) {
-        [NSException raise:EGRGBUtilsException format:@"empty string not allowed"];
+        [NSException raise:RGBUtilsException format:@"empty string not allowed"];
     }
     
     int pos = [string hasPrefix:@"#"] ? 1 : 0;
@@ -48,7 +48,7 @@ static NSString *const EGRGBUtilsException = @"EGRGBUtilsException";
                                alpha:alpha / (CGFloat)0xff];
     }
     
-    @throw [NSException exceptionWithName:EGRGBUtilsException
+    @throw [NSException exceptionWithName:RGBUtilsException
                                    reason:@"string length should be 4, 5, 8 or 9"
                                  userInfo:nil];
 }

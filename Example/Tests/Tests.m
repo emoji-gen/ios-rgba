@@ -62,7 +62,7 @@ describe(@"RGBAUtils", ^{
             [[theBlock(^{
                 [RGBAUtils toUIColor:@""];
             }) should]
-                raiseWithName:@"EGRGBUtilsException"
+                raiseWithName:@"RGBUtilsException"
                        reason:@"empty string not allowed"];
         });
         
@@ -70,7 +70,7 @@ describe(@"RGBAUtils", ^{
            [[theBlock(^{
                [RGBAUtils toUIColor:@"123"];
            }) should]
-                raiseWithName:@"EGRGBUtilsException"
+                raiseWithName:@"RGBUtilsException"
                        reason:@"string length should be 4, 5, 8 or 9"];
         });
         
@@ -78,7 +78,7 @@ describe(@"RGBAUtils", ^{
             [[theBlock(^{
                 [RGBAUtils toUIColor:@"123456"];
             }) should]
-                raiseWithName:@"EGRGBUtilsException"
+                raiseWithName:@"RGBUtilsException"
                        reason:@"string length should be 4, 5, 8 or 9"];
         });
         
@@ -86,7 +86,7 @@ describe(@"RGBAUtils", ^{
             [[theBlock(^{
                 [RGBAUtils toUIColor:@"1234567"];
             }) should]
-                raiseWithName:@"EGRGBUtilsException"
+                raiseWithName:@"RGBUtilsException"
                        reason:@"string length should be 4, 5, 8 or 9"];
         });
         
@@ -94,7 +94,7 @@ describe(@"RGBAUtils", ^{
             [[theBlock(^{
                 [RGBAUtils toUIColor:@"1234567890"];
             }) should]
-                raiseWithName:@"EGRGBUtilsException"
+                raiseWithName:@"RGBUtilsException"
                        reason:@"string length should be 4, 5, 8 or 9"];
         });
     });
