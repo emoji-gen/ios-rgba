@@ -1,4 +1,4 @@
-# iOS-RGBA &nbsp;[![CI Status](http://img.shields.io/travis/emoji-gen/ios-rgba.svg?style=flat)](https://travis-ci.org/emoji-gen/ios-rgba) [![Version](https://img.shields.io/cocoapods/v/RGBA.svg?style=flat)](http://cocoapods.org/pods/RGBA) [![License](https://img.shields.io/cocoapods/l/RGBA.svg?style=flat)](http://cocoapods.org/pods/RGBA) [![Platform](https://img.shields.io/cocoapods/p/RGBA.svg?style=flat)](http://cocoapods.org/pods/RGBA)
+# iOS-RGBA &nbsp;[![CI Status](https://travis-ci.org/emoji-gen/ios-rgba.svg?branch=master)](https://travis-ci.org/emoji-gen/ios-rgba) [![codebeat badge](https://codebeat.co/badges/6f3f525f-95e6-4ac2-941b-2738d2ad4498)](https://codebeat.co/projects/github-com-emoji-gen-ios-rgba-master) [![Version](https://img.shields.io/cocoapods/v/RGBA.svg?style=flat)](http://cocoapods.org/pods/RGBA) [![License](https://img.shields.io/cocoapods/l/RGBA.svg?style=flat)](http://cocoapods.org/pods/RGBA) [![Platform](https://img.shields.io/cocoapods/p/RGBA.svg?style=flat)](http://cocoapods.org/pods/RGBA)
 
 :art: RGBA color string utilities for iOS
 
